@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আমার পিডিএফ সংগ্রহ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>আমার পিডিএফ সংগ্রহ</h1>
+        <div class="search-box">
+            <input type="text" id="searchInput" onkeyup="searchPdf()" placeholder="পিডিএফ খুঁজুন...">
+        </div>
+        <ul id="pdfList">
+            <li data-title="50 Common German Verbs"><a href="pdfs/book1.pdf" target="_blank">50 Common German Verbs</a> <button onclick="downloadPdf('pdfs/book1.pdf', '50 Common German Verbs.pdf')">ডাউনলোড</button></li>
+            <li data-title="A2 Prüfungstraining vocabulary "><a href="pdfs/book2.pdf" target="_blank">A2 Prüfungstraining vocabulary</a> <button onclick="downloadPdf('pdfs/book2.pdf', 'A2 Prüfungstraining vocabulary.pdf')">ডাউনলোড</button></li>
+            <li data-title="Adjektivdeklination  - Sheet"><a href="pdfs/book3.pdf" target="_blank">Adjektivdeklination  - Sheet</a> <button onclick="downloadPdf('pdfs/book3.pdf', 'Adjektivdeklination  - Sheet.pdf')">ডাউনলোড</button></li>
+            </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
